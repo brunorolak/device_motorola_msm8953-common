@@ -58,7 +58,6 @@
     <hidden-api-whitelisted-app package="com.qualcomm.qti.callfeaturessetting" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.confdialer" />
     <hidden-api-whitelisted-app package="org.codeaurora.dialer" />
-    <hidden-api-whitelisted-app package="com.qti.qualcomm.datastatusnotification" />
     <hidden-api-whitelisted-app package="com.qti.qualcomm.deviceinfo" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.modemtestmode" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.networksetting" />
