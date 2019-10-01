@@ -27,6 +27,10 @@ COMMON_PATH := device/motorola/msm8953-common
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@4.0-impl_32 \
