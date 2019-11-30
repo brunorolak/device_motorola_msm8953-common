@@ -52,3 +52,6 @@ allow vendor_toolbox {
     persist_time_file
     sensors_persist_file
 }:file { r_file_perms setattr };
+
+allow vendor_toolbox idd_data_file:dir create_dir_perms;
+allow vendor_toolbox idd_root_dir:dir rw_dir_perms;
