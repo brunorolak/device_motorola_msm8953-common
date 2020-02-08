@@ -44,8 +44,8 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 
 # Bluetooth-AptX - from deen_sprout
-lib64/libaptXHD_encoder.so
-lib64/libaptX_encoder.so
+system/lib64/libaptXHD_encoder.so
+system/lib64/libaptX_encoder.so
 
 # CNE - from deen_sprout
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
@@ -185,9 +185,9 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 
 # FM - from deen_sprout
-lib/libfm-hci.so
-lib64/fm_helium.so
-lib64/libfm-hci.so
+system/lib/libfm-hci.so
+system/lib64/fm_helium.so
+system/lib64/libfm-hci.so
 -product/lib/vendor.qti.hardware.fm@1.0.so
 -product/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/bin/fm_qsoc_patches
@@ -441,10 +441,10 @@ vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxWmaDec.so
 
 # Perf - from deen_sprout
-lib/libqti_performance.so
-lib/libqti-perfd-client_system.so
-lib64/libqti_performance.so
-lib64/libqti-perfd-client_system.so
+system/lib/libqti_performance.so
+system/lib/libqti-perfd-client_system.so
+system/lib64/libqti_performance.so
+system/lib64/libqti-perfd-client_system.so
 vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
