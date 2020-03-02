@@ -108,3 +108,6 @@
 
 # tombstones
 /data/vendor/tombstones/rfs(/.*)?      u:object_r:rfs_tombstone_data_file:s0
+
+# Device nodes
+/dev/stune(/.*)?                                                                    u:object_r:cgroup:s0
