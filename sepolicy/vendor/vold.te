@@ -3,3 +3,6 @@ allow vold system_data_file:file { ioctl open read };
 allow vold keystore:dir {search};
 allow vold keystore:file {read open};
 allow vold keystore:process {getattr};
+
+typeattribute vold system_executes_vendor_violators;
+allow vold vendor_file:file read;
