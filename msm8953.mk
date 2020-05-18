@@ -128,6 +128,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     $(COMMON_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(COMMON_PATH)/configs/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.gps.agps_provider=1 \
+    ro.ril.def.agps.mode=1
 
 # HW crypto
 PRODUCT_PACKAGES += \
