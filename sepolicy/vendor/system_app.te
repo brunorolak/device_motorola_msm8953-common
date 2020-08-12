@@ -4,3 +4,6 @@ allow system_app sysfs_homebutton:file { getattr open };
 
 get_prop(system_app, vendor_fm_prop)
 get_prop(system_app, hwrev_prop)
+
+# Battery Health
+r_dir_file(system_app, sysfs_battery_supply);
