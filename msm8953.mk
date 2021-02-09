@@ -278,8 +278,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Power
 PRODUCT_PACKAGES += \
     power.qcom \
-    android.hardware.power@1.0-impl \
-    android.hardware.power@1.0-service
+    android.hardware.power-service-qti \
+    vendor.qti.hardware.perf@2.0.vendor
 
 # Powerhint
 PRODUCT_COPY_FILES += \
