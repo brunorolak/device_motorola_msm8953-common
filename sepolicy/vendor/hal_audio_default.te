@@ -16,6 +16,7 @@ binder_call(hal_audio_server, hal_audio_default)
 
 r_dir_file(hal_audio_server, sysfs_sectouch)
 r_dir_file(hal_audio_server, sysfs_sensor)
+r_dir_file(hal_audio_server, sysfs_input)
 
 set_prop(hal_audio_server, vendor_aov_prop)
 
