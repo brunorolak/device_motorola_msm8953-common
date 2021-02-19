@@ -77,3 +77,13 @@
 
 # DTV
 /dev/isdbt                                               u:object_r:isdbt_device:s0
+
+# ADSPD
+/dev/socket/adspdsock         u:object_r:adspd_socket:s0
+/dev/ttyHS3                   u:object_r:adspd_device:s0
+/sys/kernel/aov(/.*)?         u:object_r:sysfs_adspd:s0
+
+/(vendor|system/vendor)/bin/hw/motorola\.hardware\.audio\.adspd@1\.0-service          u:object_r:hal_audio_default_exec:s0
+/(vendor|system/vendor)/lib(64)?/libadspd\.so                                         u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/motorola\.hardware\.audio\.adspd@1\.0\.so            u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/motorola\.hardware\.audio\.adspd@1\.0_vendor\.so     u:object_r:same_process_hal_file:s0
