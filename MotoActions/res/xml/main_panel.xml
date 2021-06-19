@@ -21,21 +21,10 @@
         android:key="doze"
         android:title="@string/ambient_display_title"
         android:summary="@string/ambient_display_manage_summary"
-        android:icon="@drawable/bell">
+        android:icon="@drawable/ic_settings_doze">
             <intent
                 android:targetPackage="com.moto.actions"
                 android:targetClass="com.moto.actions.DozeSettingsActivity" />
-        </Preference>
-
-	<Preference
-        android:key="kcal"
-        android:title="@string/kcal_title"
-        android:summary="@string/kcal_summary"
-	android:icon="@drawable/smartphone"
-        android:persistent="false" >
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.moto.actions"
-                android:targetClass="com.moto.actions.DisplayCalibration" />
         </Preference>
     </PreferenceCategory>
 
@@ -46,7 +35,7 @@
         android:key="gestures"
         android:title="@string/device_gestures_title"
         android:summary="@string/device_gestures_summary"
-        android:icon="@drawable/home">
+        android:icon="@drawable/ic_settings_gestures">
             <intent
                 android:targetPackage="com.moto.actions"
                 android:targetClass="com.moto.actions.GestureSettingsActivity" />
@@ -56,7 +45,7 @@
         android:key="fp_gestures"
         android:title="@string/fingerprint_gestures_title"
         android:summary="@string/fingerprint_gestures_manage_summary"
-        android:icon="@drawable/tap">
+        android:icon="@drawable/ic_settings_fingerprint">
             <intent
                 android:targetPackage="com.moto.actions"
                 android:targetClass="com.moto.actions.FPGestureSettingsActivity" />
