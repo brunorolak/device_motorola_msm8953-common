@@ -362,6 +362,9 @@ PRODUCT_PACKAGES += \
     libmemset_shim \
     libqsap_shim
 
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
