@@ -130,6 +130,10 @@ DEVICE_PROVISIONED=1
 # media
 debug.stagefright.omx_default_rank.sw-audio=16
 
+# SOC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=MSM8953
+
 # VoLTE
 
 persist.vendor.radio.force_on_dc=true
