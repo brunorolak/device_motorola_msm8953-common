@@ -21,6 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit proprietary files
 $(call inherit-product, vendor/motorola/msm8953-common/msm8953-common-vendor.mk)
 
+# Disable APEX compression
+# Keep this after including updatable_apex.mk
+PRODUCT_COMPRESSED_APEX := false
+
 # Common Tree Path
 COMMON_PATH := device/motorola/msm8953-common
 
