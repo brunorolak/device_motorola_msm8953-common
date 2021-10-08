@@ -421,6 +421,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.smd=false
 
+# Secure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.0.vendor
+
 # Shims
 PRODUCT_PACKAGES += \
     libcutils_shim \
