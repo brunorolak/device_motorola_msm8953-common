@@ -77,6 +77,9 @@ on fs
     #wait /dev/block/bootdevice/by-name/oem
     #mount ext4 /dev/block/bootdevice/by-name/oem /oem ro nosuid nodev barrier=1
 
+    rm /cache/boot_lc_main.txt
+    start boot_lc_main
+
 on late-fs
     # Start services for bootanim
     start servicemanager
@@ -169,6 +172,13 @@ service audiod /system/vendor/bin/audiod
    class late_start
    user system
    group system
+
+service boot_lc_main /system/bin/logcat -f /cache/boot_lc_main.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
 
 on boot
     start rmt_storage
@@ -296,3 +306,6 @@ service energy-awareness /system/vendor/bin/energy-awareness
 on boot
     write /sys/devices/soc/78b8000.i2c/i2c-4/4-0020/input/input0/fw_name PR1702898-s3528t_00260005_00380008.img
     write /sys/devices/soc/78b8000.i2c/i2c-4/4-0020/input/input0/update_fw 1
+
+on property:sys.boot_completed=1
+    stop boot_lc_main
