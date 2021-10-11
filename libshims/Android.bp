@@ -16,3 +16,11 @@ cc_library {
         },
     },
 }
+
+cc_library_shared {
+    name: "libgraphicbuffer_shim",
+    srcs: ["GraphicBufferProducer.cpp"],
+    shared_libs: ["libui"],
+    compile_multilib: "32",
+    vendor: true
+}

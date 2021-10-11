@@ -377,7 +377,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     libcutils_shim \
     libmemset_shim \
-    libqsap_shim
+    libqsap_shim \
+    libgraphicbuffer_shim
 
 # USB HAL
 PRODUCT_PACKAGES += \

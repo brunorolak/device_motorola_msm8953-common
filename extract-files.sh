@@ -83,6 +83,7 @@ function blob_fixup() {
 
         vendor/lib/libmot_gpu_mapper.so)
             sed -i "s/libgui/libwui/" "${2}"
+            "${PATCHELF}" --add-needed libgraphicbuffer_shim.so "${2}"
             ;;
 
         # Fix missing symbols
