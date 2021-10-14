@@ -10,3 +10,6 @@ allow platform_app retaildemo_prop:file { open read };
 get_prop(platform_app, moto_boot_prop)
 get_prop(platform_app, hwrev_prop)
 get_prop(platform_app, camera_prop)
+
+#FPS Info Service
+allow platform_app vendor_sysfs_graphics:file r_file_perms;
