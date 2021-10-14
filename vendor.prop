@@ -41,6 +41,9 @@ debug.media.codec2=2
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Display
+debug.renderengine.backend=threaded
+
 # Dolby
 persist.vendor.audio_fx.current=dolby
 ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
