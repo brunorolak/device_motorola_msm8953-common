@@ -32,6 +32,10 @@ on early-init
     chmod 0755 /sys/kernel/debug
     start adbd
 
+on init
+    setprop ro.kernel.ebpf.supported false
+
+
   # Change ownership of hw_recovery related nodes
     chown system graphics /sys/kernel/debug/dri/0/debug/dump
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_reg
