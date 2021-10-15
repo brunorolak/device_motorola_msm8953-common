@@ -43,7 +43,8 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    tinymix
+    tinymix \
+    libshims_camera
 
 # Audio Policy
 PRODUCT_COPY_FILES += \
