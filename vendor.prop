@@ -49,6 +49,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display
 debug.renderengine.backend=threaded
+vendor.display.use_smooth_motion=1 
 
 # Dolby
 persist.vendor.audio_fx.current=dolby
