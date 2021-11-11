@@ -16,3 +16,5 @@ get_prop(system_server, userspace_reboot_config_prop)
 get_prop(system_server, userspace_reboot_exported_prop)
 
 get_prop(system_server, exported_camera_prop)
+
+allow system_server sysfs_batteryinfo:dir r_dir_perms;
