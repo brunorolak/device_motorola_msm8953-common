@@ -199,6 +199,15 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
+# SHIMS
+TARGET_LD_SHIM_LIBS := \
+	/vendor/lib64/libmdmcutback.so | libqsap_shim.so \
+	/vendor/lib64/libril-qc-hal-qmi.so | libcutils_shim.so \
+	/vendor/bin/charge_only_mode | libmemset_shim.so \
+	/system/product/lib64/lib-imsvideocodec.so | libgui_shim.so \
+	/system/product/lib64/lib-imscamera.so | libgui_shim.so \
+	/vendor/lib/libmot_gpu_mapper.so | libgui_shim_vendor.so
+
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_WLAN_DEVICE                := qcwcn
