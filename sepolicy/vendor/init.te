@@ -22,3 +22,6 @@ allow init hal_graphics_composer_default:binder call;
 allow init same_process_hal_file:file execute;
 allow init servicemanager:binder { call transfer };
 allow init sysfs_healthd:file setattr;
+
+allow init hwservicemanager:binder { call transfer };
+allow init vendor_dolby_loglevel_prop:file { read relabelto write };
