@@ -484,6 +484,12 @@ on property:vendor.bluetooth.startbtlogger=true
 on property:vendor.bluetooth.startbtlogger=false
     stop vendor.bt_logger
 
+# DSDS - Restart qcrild on data switch
+on property:persist.sys.radio.mobile_data_swap=1
+    restart vendor.qcrild
+    exec /bin/sleep 2
+    restart vendor.qcrild2
+
 on property:vendor.media.target.version=*
     setprop vendor.sys.media.target.version ${vendor.media.target.version}
 
