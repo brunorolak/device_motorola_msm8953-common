@@ -1,3 +1,4 @@
+vendor.net.qmi.rev_ip_info u:object_r:vendor_radio_prop:s0
 vendor.powerhal.state u:object_r:power_prop:s0
 vendor.powerhal.audio u:object_r:power_prop:s0
 vendor.ril.                u:object_r:vendor_radio_prop:s0
