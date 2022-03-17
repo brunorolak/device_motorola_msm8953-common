@@ -83,6 +83,8 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
+    android.frameworks.displayservice@1.0 \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
@@ -147,8 +149,7 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0 \
     android.hardware.gatekeeper@1.0.vendor
 
 # HW crypto
@@ -280,7 +281,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     android.hardware.power@1.2 \
     android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.0.vendor
+    vendor.qti.hardware.perf@2.2.vendor \
+    vendor.qti.hardware.perf@2.2
 
 # Powerhint
 PRODUCT_COPY_FILES += \

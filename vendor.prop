@@ -35,6 +35,10 @@ bluetooth.hfp.client=1
 vendor.qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.7
 
+# Bpf bypass
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=false
+
 # Codec2 switch
 debug.media.codec2=2
 
