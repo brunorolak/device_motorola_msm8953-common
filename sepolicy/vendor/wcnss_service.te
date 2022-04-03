@@ -1,1 +1,4 @@
-get_prop(wcnss_service, moto_boot_prop)
+get_prop(wcnss_service, moto_boot_prop);
+get_prop(wcnss_service, system_prop);
+set_prop(wcnss_service, wifi_prop);
+set_prop(wcnss_service, vendor_default_prop);
