@@ -55,3 +55,7 @@ allow vendor_toolbox {
 
 allow vendor_toolbox idd_data_file:dir create_dir_perms;
 allow vendor_toolbox idd_root_dir:dir rw_dir_perms;
+
+allow vendor_toolbox persist_audio_file:file { getattr };
+allow vendor_toolbox persist_chargeonly_file:dir { getattr setattr read open };
+allow vendor_toolbox persist_chargeonly_file:file { getattr };
