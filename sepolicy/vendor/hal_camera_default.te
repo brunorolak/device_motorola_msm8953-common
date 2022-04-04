@@ -11,6 +11,7 @@ allow hal_camera_default sysfs_healthd:dir search;
 allow hal_camera_default persist_camera_file:file { r_file_perms setattr };
 allow hal_camera_default sysfs:file { getattr open read };
 allow hal_camera_default sysfs:file { getattr open read };
+allow hal_camera_default vendor_data_file:dir read;
 
 get_prop(hal_camera_default, moto_boot_prop)
 set_prop(hal_camera_default, camera_prop)
