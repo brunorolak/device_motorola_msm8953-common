@@ -53,9 +53,6 @@ allow vendor_toolbox {
     sensors_persist_file
 }:file { r_file_perms setattr };
 
-allow vendor_toolbox idd_data_file:dir create_dir_perms;
-allow vendor_toolbox idd_root_dir:dir rw_dir_perms;
-
 allow vendor_toolbox persist_audio_file:file { getattr };
 allow vendor_toolbox persist_chargeonly_file:dir { getattr setattr read open };
 allow vendor_toolbox persist_chargeonly_file:file { getattr };
