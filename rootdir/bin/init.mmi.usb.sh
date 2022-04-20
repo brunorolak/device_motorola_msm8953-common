@@ -51,7 +51,7 @@ tcmd_ctrl_adb ()
                 echo "mmi-usb-sh: disabling adb ($new_usb_config)"
                 setprop persist.vendor.usb.config $new_usb_config
                 setprop vendor.usb.config $new_usb_config
-                setprop persist.vendor.factory.allow_adb 0
+                setprop persist.vendor.factory.allow_adb 1
             fi
         ;;
         "1")
