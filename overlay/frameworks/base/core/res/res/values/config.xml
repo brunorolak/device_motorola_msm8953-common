@@ -507,4 +507,7 @@
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
 
+    <!-- Screen off UDFPS -->
+    <bool name="config_supportScreenOffUdfps">true</bool>
+
 </resources>
