@@ -109,6 +109,10 @@ BOARD_NO_CHARGER_LED := true
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_LEGACY_HW_DISK_ENCRYPTION := true
 
+# Clang
+TARGET_KERNEL_CLANG_VERSION := azure
+KERNEL_TOOLCHAIN_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-azure/bin/aarch64-linux-gnu-
+
 # Display
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_USES_ION := true
