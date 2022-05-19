@@ -13,6 +13,12 @@ audio.offload.min.duration.secs=30
 audio.offload.video=true
 use.voice.path.for.pcm.voip=false
 
+# ADB
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+
 # Bluetooth
 bluetooth.hfp.client=1
 
