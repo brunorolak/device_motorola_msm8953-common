@@ -92,25 +92,9 @@ on property:persist.vendor.usb.mot-factory.config=*
     setprop persist.sys.usb.mot-factory.config ${persist.vendor.usb.mot-factory.config}
     setprop persist.sys.usb.mot-factory.func ${persist.vendor.usb.mot-factory.config}
 
-service vendor.mmi-usb-sh /vendor/bin/init.mmi.usb.sh
-    class late_start
-    user root
-    group system
-    oneshot
-
 #  Disable USB-SS in bp-tools
 on property:ro.bootmode=bp-tools
    write /sys/module/dwc3_msm/parameters/disable_ss_switch 1
-
-on property:vendor.tcmd.ctrl_adb=1
-    stop vendor.mmi-usb-sh
-    setprop vendor.usb.mmi-usb-sh.action vendor.tcmd.ctrl_adb
-    start vendor.mmi-usb-sh
-
-on property:vendor.tcmd.ctrl_adb=0
-    stop vendor.mmi-usb-sh
-    setprop vendor.usb.mmi-usb-sh.action vendor.tcmd.ctrl_adb
-    start vendor.mmi-usb-sh
 
 # USB compositions
 # QC compositions for msm8953
