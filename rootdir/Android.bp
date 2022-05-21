@@ -63,12 +63,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.mmi.usb.sh",
-    src: "bin/init.mmi.usb.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "bin/init.qcom.early_boot.sh",
     soc_specific: true,
