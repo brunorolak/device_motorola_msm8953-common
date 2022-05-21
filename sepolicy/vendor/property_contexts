@@ -38,7 +38,6 @@ ro.vendor.boot.hwrev       u:object_r:hwrev_prop:s0
 vendor.hw.aov.             u:object_r:vendor_aov_prop:s0
 ro.vendor.fm.              u:object_r:vendor_fm_prop:s0
 
-persist.vendor.camera.     u:object_r:camera_prop:s0
 persist.vendor.dolby.loglevel   u:object_r:vendor_dolby_loglevel_prop:s0
 
 wifi.active.interface      u:object_r:wifi_hal_prop:s0
@@ -62,7 +61,27 @@ pdaf.camif.roi		u:object_r:camera_prop:s0
 pdaf.eep.default		u:object_r:camera_prop:s0
 pdaf.eep.dump		u:object_r:camera_prop:s0
 facedetect.weight		u:object_r:camera_prop:s0
-
+camera.cpp.dumppreviewpayload		u:object_r:camera_prop:s0
+camera.cpp.dumpreprocesspayload		u:object_r:camera_prop:s0
+camera.led_exp_index		u:object_r:camera_prop:s0
+cameradaemon.		u:object_r:camera_prop:s0
+cameradaemon.SaveMemAtBoot		u:object_r:camera_prop:s0
+persist.bokeh.live.dumpyuv		u:object_r:camera_prop:s0
+persist.cam.cal_prt_otp		u:object_r:camera_prop:s0
+persist.cam.pp.feat.mask		u:object_r:camera_prop:s0
+persist.camera.ae.fd.enable		u:object_r:camera_prop:s0
+persist.camera.antibanding_mode		u:object_r:camera_prop:s0
+persist.camera.dual.SlaveLensTH		u:object_r:camera_prop:s0
+persist.camera.log3a		u:object_r:camera_prop:s0
+persist.camera.mot.readout		u:object_r:camera_prop:s0
+persist.camera.motexp_update		u:object_r:camera_prop:s0
+persist.camera.tint_strength		u:object_r:camera_prop:s0
+persist.debug.sf.showfps		u:object_r:camera_prop:s0
+persist.vendor.camera.		u:object_r:camera_prop:s0
+ro.camera.req.fmq.size		u:object_r:camera_prop:s0
+ro.camera.res.fmq.size		u:object_r:camera_prop:s0
+vendor.camera.skip_unconfigure.packagelist		u:object_r:camera_prop:s0
+video.disable.ubwc		u:object_r:camera_prop:s0
 
 # Radio
 ro.build.motfactory u:object_r:vendor_radio_prop:s0
