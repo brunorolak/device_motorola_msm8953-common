@@ -8,3 +8,6 @@ typeattribute vold system_executes_vendor_violators;
 allow vold vendor_file:file read;
 
 allow vold rootfs:dir { add_name create setattr write };
+allow vold {
+         mnt_product_file
+}:dir r_dir_perms;
