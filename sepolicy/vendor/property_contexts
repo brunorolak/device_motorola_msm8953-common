@@ -37,6 +37,8 @@ ro.vendor.hw.hwrev         u:object_r:hwrev_prop:s0
 ro.vendor.boot.hwrev       u:object_r:hwrev_prop:s0
 vendor.hw.aov.             u:object_r:vendor_aov_prop:s0
 ro.vendor.fm.              u:object_r:vendor_fm_prop:s0
+vendor.wlan.driver.ath      u:object_r:vendor_wifi_prop:s0
+vendor.wlan.driver.config	u:object_r:vendor_wifi_prop:s0
 
 persist.vendor.dolby.loglevel   u:object_r:vendor_dolby_loglevel_prop:s0
 
