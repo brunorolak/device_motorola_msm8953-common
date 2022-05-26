@@ -1,3 +1,4 @@
 get_prop(wcnss_service, moto_boot_prop);
+set_prop(wcnss_service, vendor_wifi_prop);
 
 dontaudit wcnss_service system_prop:file read;
