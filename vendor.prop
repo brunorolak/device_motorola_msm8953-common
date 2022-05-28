@@ -37,11 +37,18 @@ debug.media.codec2=2
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Graphics
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
 persist.dbg.volte_avail_ovr=1
+persist.vendor.radio.enable_temp_dds=true
+persist.vendor.lte.pco_mmi_legacy_mode=true
+persist.vendor.lte.pco_supported=true
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 persist.vendor.radio.no_wait_for_card=1
