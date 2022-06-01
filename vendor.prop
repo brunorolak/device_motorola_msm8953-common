@@ -37,6 +37,10 @@ debug.media.codec2=2
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Dolby
+persist.vendor.audio_fx.current=dolby
+ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
+
 # Graphics
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
@@ -119,6 +123,9 @@ ro.vendor.build.vendorprefix=/vendor
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 ro.telephony.use_old_mnc_mcc_format=true
 DEVICE_PROVISIONED=1
+
+# media
+debug.stagefright.omx_default_rank.sw-audio=16
 
 # VoLTE
 

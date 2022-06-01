@@ -103,6 +103,10 @@ PRODUCT_PACKAGES += \
     libvulkan \
     libtinyxml
 
+# Dolby
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
