@@ -146,10 +146,6 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
 TARGET_KERNEL_CLANG_COMPILE := true
 
-# Clang
-TARGET_KERNEL_CLANG_VERSION := azure
-KERNEL_TOOLCHAIN_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-azure/bin/aarch64-linux-gnu-
-
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
