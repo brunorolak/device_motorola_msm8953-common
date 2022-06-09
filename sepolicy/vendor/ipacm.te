@@ -1,0 +1,1 @@
+allow hal_wifi_default wifi_hal_prop:property_service set;
