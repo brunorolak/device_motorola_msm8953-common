@@ -25,4 +25,14 @@
 
     <!-- Doze: check proximity sensor before pulsing? -->
     <bool name="doze_proximity_check_before_pulse">false</bool>
+
+    <!-- Icons that don't show in a collapsed non-keyguard statusbar -->
+    <string-array name="config_collapsed_statusbar_icon_blocklist" translatable="false">
+        <item>@*android:string/status_bar_call_strength</item>
+    </string-array>
+
+    <!-- Icons that don't show in a collapsed statusbar on keyguard -->
+    <string-array name="config_keyguard_statusbar_icon_blocklist" translatable="false">
+        <item>@*android:string/status_bar_call_strength</item>
+    </string-array>
 </resources>
