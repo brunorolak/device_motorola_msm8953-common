@@ -26,6 +26,12 @@ vendor.audio.use.sw.ape.decoder=false
 vendor.voice.path.for.pcm.voip=false
 vendor.audio.offload.min.duration.secs=30
 
+# App launch prefetching (IORapd)
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+
 # Bluetooth
 bluetooth.hfp.client=1
 vendor.qcom.bluetooth.soc=smd
