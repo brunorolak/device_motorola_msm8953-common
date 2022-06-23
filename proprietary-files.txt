@@ -269,15 +269,15 @@ vendor/lib/libtinyxml2_1.so|ae18b1269052274ad98ff954bf8e1ce0fe50eccf
 vendor/lib64/libscalar.so|2887ceaf08f1c17fffe13038168d48dcb442f0cc
 vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
 
-# Graphics - (SDM) - from deen_sprout
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-diag.so
--vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmextension.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-diag.so
--vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
+# Graphics - (SDM) - from deen_sprout - 10-QPK30.51-bffa2-release-keys
+vendor/lib/libsdm-color.so|fa3f8c0062d474fdf6960fcbcc3bf21a5c3fd594
+vendor/lib/libsdm-diag.so|46b5c2d6fab1e655efde1657b2e51dc00c00b763
+-vendor/lib/libsdm-disp-vndapis.so|9bd99e0024f5abcc285f64aadea8725556f16789
+vendor/lib/libsdmextension.so|b6a2100c733b7a5c4688bb9bcae581461ada70f3
+vendor/lib64/libsdm-color.so|993dc946c4aa439280527c13798938c51dd9dee7
+vendor/lib64/libsdm-diag.so|87373a043267b9b3bb923931a910119a9deb425f
+-vendor/lib64/libsdm-disp-vndapis.so|b1dede9efa81e8d0374343612ad7ad0d967e8e29
+vendor/lib64/libsdmextension.so|47b7fcfb790df4417654c566af1a8a74d4bf3e2f
 
 # Graphics (vulkan) - from river:10/QPUS30.52-33-11
 vendor/lib/hw/vulkan.msm8953.so|cc458e1c8eccb85960c0c5c5d490733e3c32cc93
@@ -753,23 +753,19 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 # MOTO RIL - from deen_sprout
 vendor/lib64/libsensorndkbridge.so
 
-# Sensors  - from deen_sprout
-vendor/bin/capsense_reset
-vendor/bin/sensors.qti
-vendor/lib/hw/activity_recognition.msm8953.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib/libsensorcal.so
-vendor/lib/sensors.ssc.so
-vendor/lib/sensors.rp.so
-vendor/lib/sensor_calibrate.so
-vendor/lib64/hw/activity_recognition.msm8953.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/libsensorcal.so
-vendor/lib64/sensors.ssc.so
-vendor/lib64/sensor_calibrate.so
-vendor/lib64/sensors.rp.so
+# Sensors - from deen_sprout - 10-QPK30.51-bffa2-release-keys
+vendor/bin/capsense_reset|95cf79fc1dfdc7d95150fbe2c0d17c40f736b9a5
+vendor/bin/sensors.qti|d236800766eb407c65b04ee952e3ae867b9c4819
+vendor/lib/libsensor_reg.so|f81737c08759acc8add3ce87160f1ae24263546d
+vendor/lib/libsensor1.so|637aa4ec588533a3dcddb6ed95a7434f1f6b7d59
+vendor/lib/sensor_calibrate.so|53353469aa930cd298d6ff4a1981cc7cebb03d5e
+vendor/lib/sensors.rp.so|e35005a9a8e0aa574bb116490ff0240eb8b9a094
+vendor/lib/sensors.ssc.so|e69b474fd6e94e93b6684935455cc6c9ef5c2192
+vendor/lib64/libsensor_reg.so|fc6d0f4021f01ba0d0c2406e7a58dd1af4d21b19
+vendor/lib64/libsensor1.so|74faeeb9d8679fa1260bbc0cd7aa32cc859204cd
+vendor/lib64/sensor_calibrate.so|47f475a83d6eb59f45a810299116893c91acf79e
+vendor/lib64/sensors.rp.so|c792a29071b6e8521e205b0d0e87a96401407618
+vendor/lib64/sensors.ssc.so|761d2b907b60176a8ef77e7f9296337b936a5351
 
 # TUI - from deen_sprout
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
