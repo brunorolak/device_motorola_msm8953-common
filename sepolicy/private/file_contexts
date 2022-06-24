@@ -1,0 +1,2 @@
+# Sysfs
+/sys/devices(/platform)?/soc/[a-z0-9]+.qcom,kgsl-hyp/subsys0(/.*)?          u:object_r:sysfs_ssr:s0
