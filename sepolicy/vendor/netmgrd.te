@@ -1,2 +1,3 @@
 allow netmgrd diag_device:chr_file {open read write };
 get_prop(netmgrd, vendor_radio_prop)
+allow netmgrd sysfs:file { open read };
