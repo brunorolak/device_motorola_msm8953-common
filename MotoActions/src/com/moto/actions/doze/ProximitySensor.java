@@ -67,7 +67,7 @@ public class ProximitySensor implements ScreenStateNotifier, SensorEventListener
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        boolean isNear = event.values[0] < mSensor.getMaximumRange();
+        boolean isNear = event.values[0] < (int) mSensor.getMaximumRange();
         if (mSawNear && !isNear) {
             Log.d(TAG, "wave triggered");
             mSensorAction.action();
