@@ -26,5 +26,13 @@ allow system_server mediaprovider_app:process getattr;
 allow system_server nfc:process getattr;
 allow system_server sysfs:dir open;
 allow system_server updater_app:process getattr;
+allow system_server build_bootimage_prop:file getattr;
+allow system_server gatekeeperd:process getattr;
+allow system_server shell:process getattr;
+allow system_server gmscore_app:process getattr;
+allow system_server mediaserver:process getattr;
+allow system_server system_suspend:process getattr;
+allow system_server isolated_app:process getattr;
+allow system_server untrusted_app_25:process getattr;
 
 get_prop(system_server, vendor_persist_camera_prop)
