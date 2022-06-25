@@ -36,8 +36,6 @@ on boot
     mkdir /config/usb_gadget/g1/functions/usbnet.usb0
     mkdir /dev/bus 0755 root root
     mkdir /dev/bus/usb 0755 root root
-    chown system system /sys/class/android_usb/android0/secure
-    chmod 0660 /sys/class/android_usb/android0/secure
     # Configure BAM2BAM_IPA for RNDIS
     write /sys/class/android_usb/android0/f_rndis_qc/rndis_transports BAM2BAM_IPA
     # Disable RNDIS UL aggregation
