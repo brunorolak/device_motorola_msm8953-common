@@ -6,3 +6,4 @@ allow hal_sensors_default self:netlink_kobject_uevent_socket { create read };
 allow hal_sensors_default sysfs:dir { open read };
 allow hal_sensors_default sysfs:file { getattr open read write };
 allow sensors system_prop:file { read open getattr };
+get_prop(hal_sensors_default, moto_sensor_prop)
