@@ -103,21 +103,5 @@
 # Persist mdm
 /(mnt/vendor)/persist/mdm(/.*)?                                         u:object_r:persist_mdm_file:s0
 
-# Battery and healthd
-/(mnt/vendor)/persist/battery(/.*)?                               u:object_r:persist_battery_file:s0
-/sys/devices/soc/800f000\.qcom,spmi/spmi-0/spmi0-00/800f000\.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/battery(/.*)?      u:object_r:sysfs_healthd:s0
-/sys/devices/soc/800f000\.qcom,spmi/spmi-0/spmi0-00/800f000\.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/dc(/.*)?           u:object_r:sysfs_healthd:s0
-/sys/devices/soc/800f000\.qcom,spmi/spmi-0/spmi0-00/800f000\.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/main(/.*)?         u:object_r:sysfs_healthd:s0
-/sys/devices/soc/800f000\.qcom,spmi/spmi-0/spmi0-00/800f000\.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/pc_port(/.*)?      u:object_r:sysfs_healthd:s0
-/sys/devices/soc/800f000\.qcom,spmi/spmi-0/spmi0-00/800f000\.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/usb(/.*)?          u:object_r:sysfs_healthd:s0
-/sys/devices/soc/800f000\.qcom,spmi/spmi-0/spmi0-00/800f000\.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/usbeb(/.*)?        u:object_r:sysfs_healthd:s0
-/sys/devices/soc/800f000\.qcom,spmi/spmi-0/spmi0-00/800f000\.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/wireless(/.*)?     u:object_r:sysfs_healthd:s0
-
-# Homebutton
-/sys/homebutton(/.*)?                                         u:object_r:sysfs_homebutton:s0
-
-# DTV
-/dev/isdbt                                               u:object_r:isdbt_device:s0
-
 # tombstones
 /data/vendor/tombstones/rfs(/.*)?      u:object_r:rfs_tombstone_data_file:s0
