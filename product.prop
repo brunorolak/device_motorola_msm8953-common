@@ -24,6 +24,11 @@ ro.debuggable=1
 # Bluetooth
 bluetooth.hfp.client=1
 
+# Blur
+persist.sys.sf.disable_blurs=1
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
+
 # CNE
 persist.vendor.cne.feature=1
 
@@ -105,11 +110,6 @@ debug.sf.early_phase_offset_ns=1500000
 debug.sf.early_app_phase_offset_ns=1500000
 debug.sf.early_gl_phase_offset_ns=3000000
 debug.sf.early_gl_app_phase_offset_ns=15000000
-
-# Blur
-persist.sys.sf.disable_blurs=1
-ro.surface_flinger.supports_background_blur=1
-ro.sf.blurs_are_expensive=1
 
 # Play store
 ro.com.google.clientidbase.am=android-motorola
