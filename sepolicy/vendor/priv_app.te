@@ -2,4 +2,5 @@ get_prop(priv_app, hwrev_prop);
 allow priv_app exported_camera_prop:file { read open getattr };
 binder_call(priv_app, hal_memtrack_default);
 dontaudit priv_app sysfs_android_usb:file open;
+dontaudit priv_app gmscore_app:file read;
 allow priv_app sysfs_android_usb:file open;
