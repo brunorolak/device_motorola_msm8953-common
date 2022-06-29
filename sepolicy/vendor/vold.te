@@ -1,6 +1,5 @@
 #============= vold ==============
 allow vold system_data_file:file { ioctl open read };
-allow vold hal_bootctl_hwservice:hwservice_manager find;
 allow vold keystore:dir {search};
 allow vold keystore:file {read open};
 allow vold keystore:process {getattr};
