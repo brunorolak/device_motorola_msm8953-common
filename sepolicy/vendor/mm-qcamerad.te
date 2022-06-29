@@ -10,7 +10,7 @@ allow mm-qcamerad laser_device:chr_file { ioctl open read write };
 allow mm-qcamerad binder_device:chr_file { read write };
 
 allow mm-qcamerad fwk_sensor_hwservice:hwservice_manager find;
-allow mm-qcamerad camera_data_file:dir search;
+
 
 allow mm-qcamerad vendor_data_file:dir r_dir_perms;
 allow mm-qcamerad vendor_data_file:file rw_file_perms;
@@ -21,3 +21,5 @@ get_prop(mm-qcamerad, moto_boot_prop);
 allow mm-qcamerad default_prop:file { read open getattr };
 allow mm-qcamerad vendor_camera_data_file:file { create };
 allow mm-qcamerad camera_prop:file { getattr open read };
+
+allow mm-qcamerad camera_data_file:file { getattr write };
