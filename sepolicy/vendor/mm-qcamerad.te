@@ -18,6 +18,5 @@ allow mm-qcamerad vendor_data_file:file rw_file_perms;
 vndbinder_use(mm-qcamerad);
 get_prop(mm-qcamerad, moto_boot_prop);
 
-allow mm-qcamerad default_prop:file { read open getattr };
 allow mm-qcamerad vendor_camera_data_file:file { create };
 allow mm-qcamerad camera_prop:file { getattr open read };

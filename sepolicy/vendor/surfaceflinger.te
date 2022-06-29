@@ -1,6 +1,6 @@
 dontaudit surfaceflinger firmware_file:dir search;
 
-allow surfaceflinger vendor_default_prop:file { getattr open read };
+
 allow surfaceflinger bluetooth:process {getattr};
 allow surfaceflinger bootanim:file {getattr read open};
 allow surfaceflinger bootanim:dir {search};
