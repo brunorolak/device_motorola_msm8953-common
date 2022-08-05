@@ -255,11 +255,9 @@
     <hal format="hidl">
         <name>android.hardware.secure_element</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureElement</name>
-            <instance>eSE1</instance>
-        </interface>
+        <fqname>@1.0::ISecureElement/SIM1</fqname>
+        <fqname>@1.0::ISecureElement/SIM2</fqname>
+        <fqname>@1.0::ISecureElement/eSE1</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.vibrator</name>
