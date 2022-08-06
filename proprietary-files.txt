@@ -513,7 +513,6 @@ vendor/lib64/libqmi_encdec.so
 vendor/bin/rmt_storage|4cd57922075ada02799c4ee5fdc2f3eb881d6e52
 
 # Radio - from deen_sprout
--product/app/datastatusnotification/datastatusnotification.apk
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
 product/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml
