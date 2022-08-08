@@ -58,6 +58,7 @@ ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
 # Graphics
 ro.hardware.egl=adreno
 ro.hardware.vulkan=msm8953
+debug.hwui.use_buffer_age=false
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
