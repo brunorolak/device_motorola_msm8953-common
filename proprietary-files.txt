@@ -212,7 +212,6 @@ vendor/lib/libllvm-glnext.so|e8d2f857564acf848c8ba5fe22c501e6c17f4c6f
 vendor/lib/libllvm-qcom.so|09ed956b6fcd24169605984bd3ae96170cc3db76
 vendor/lib/libmm-hdcpmgr.so|fe6f9ee46f0ad5117b928f77ac09bfae31da7264
 vendor/lib/libOpenCL.so|90dd47a0a0bdcd5632e437d0c66a4e9aed9aa419
-vendor/lib/libRSDriver_adreno.so|9822b808be17d2f9683edd8936d9bdf0f2bb78be
 vendor/lib/librs_adreno.so|95918d3371fdc82aa119cb5de81f60d6e45895bb
 vendor/lib/librs_adreno_sha1.so|cb1c5873bdeba32ee65a7a45df1116d40d78299f
 vendor/lib64/egl/eglSubDriverAndroid.so|5c3a761b201e39d82ac64d86df086d4b02ad3f91
@@ -234,7 +233,6 @@ vendor/lib64/libllvm-glnext.so|08fcd11130c743bad255f821172775e04fdf2257
 vendor/lib64/libllvm-qcom.so|cf799be7a0a708039af4ba77525409e36652e564
 vendor/lib64/libmm-hdcpmgr.so|3d8ddd744e6243d15267164c042aebaf200bb350
 vendor/lib64/libOpenCL.so|d6bb350254707592d6f6360c06d4c3336f8f1155
-vendor/lib64/libRSDriver_adreno.so|dbeb4122053e468b8fe52496f8c93261945ffe99
 vendor/lib64/librs_adreno.so|3d0a23777e7bdd979a0c84d9da731ae15d58af68
 vendor/lib64/librs_adreno_sha1.so|152cdd391b9b2d369ee132529b725d3141ee9b8e
 
