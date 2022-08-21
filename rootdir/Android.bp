@@ -22,6 +22,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.qcom.usb.rc",
+    src: "etc/init.qcom.usb.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
     name: "init.mmi.usb.rc",
     src: "etc/init.mmi.usb.rc",
     sub_dir: "init/hw",
