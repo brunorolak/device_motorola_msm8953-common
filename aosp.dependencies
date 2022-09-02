@@ -3,11 +3,11 @@
     "remote": "pixel-devices-blobs",
     "repository": "vendor_motorola_msm8953-common",
     "target_path": "vendor/motorola/msm8953-common",
-    "branch": "eleven"
+    "branch": "13.0"
   },
   {
     "repository":  "kernel_motorola_msm8953",
     "target_path": "kernel/motorola/msm8953",
-    "branch": "eleven"
+    "branch": "13.0"
   }
 ]
