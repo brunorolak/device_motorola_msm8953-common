@@ -153,6 +153,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
+# Kernel Permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
